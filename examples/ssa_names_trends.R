@@ -28,5 +28,6 @@ ggplot(df, aes(x=year, y=freq, group=name, color=name)) +
   geom_line() +
   geom_vline(xintercept=c(1992, 2008, 2016))
   
-
+# uncomment next line to save as a pdf in the folder "myfolder"
+# ggsave("myfolder/clinton.pdf")
 

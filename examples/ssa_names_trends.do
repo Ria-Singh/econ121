@@ -23,3 +23,6 @@ twoway (line freq year if name=="Hilary",lcolor(blue)) ///
        (line freq year if name=="Hillary",lcolor(orange)) ///
 	   ,xline(1992 2008 2016,lcolor(black)) ///
 	    legend(label(1 "Hilary") label(2 "Hillary"))
+		
+//uncomment next line to save as a pdf in the folder "myfolder"
+//graph export "myfolder/clinton.pdf"
