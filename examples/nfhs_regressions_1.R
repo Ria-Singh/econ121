@@ -31,9 +31,9 @@ hist(nfhs$weight)
 library(dplyr) #for collapsing by age
 library(radiant.data) #for weighted sd function
 nfhs_collapsed <- nfhs %>% group_by(age) %>% 
-  summarize(mean=weighted.mean(assets,w=weight),
-            sd = weighted.sd(assets,w=weight),
-            n=n())
+                           summarize(mean = weighted.mean(assets,w=weight),
+                                     sd = weighted.sd(assets,w=weight),
+                                     n=n())
 
 # plot the data by age
 library(ggplot2) #for plots
